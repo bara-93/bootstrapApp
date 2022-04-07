@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+
+/*  */
+h1, h2, h3, h4, h5, h6{
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primary-color:#e65f78;
+    --hover-color:#d8576f;
+}
+.purpul{
+    color: var(--primary-color);
+}
+.custom-bg{
+    background-color: var(--primary-color);
+}
+.btn-custom{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+.btn-custom:hover{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+.w-45{
+    width:45%;
+}
+.w-35{
+    width:35%;
+}
+.w-65{
+    width: 60%;
+}
+.w-85{
+    width: 85%;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+/* start navbar */
+/* .nav{
+    color: #000 !important;
+} */
+.navbar .img-logo2{
+    display: none;
+}
+.nav-link.active{
+    color: var(--primary-color) !important;
+}
+.nav-link:hover{
+    color: var(--primary-color) !important;
+}
+.transition-5{
+    transition: 0.5s;
+}
+/* end navbar */
+
+/* start header  */
+.home{
+    background-image: url(../img/103.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.home::after{
+    content:'';
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.home--content{
+    z-index: 1;
+}
+.btn-header:hover{
+    background-color: var(--primary-color);
+    color:#000 !important;
+}
+.scroll-down{
+    display: block;
+    height: 50px;
+    width:30px;
+    animation:translateY 1.3s  infinite ; 
+    /* animation-direction: alternate; */
+    /* transition: 0.75s; */
+    /* background-color: red; */
+
+}
+.vert-line{
+    display: inline-block;
+    width:3px;
+    height: 10px;
+    background-color: #fff;
+    margin-top: 26px;
+}
+
+@keyframes translateY {
+    0%{
+        transform: translateY(0%);
+    }
+    16.6%{
+        transform: translateY(90%);
+        transition: 0s;
+
+
+    }
+    33.3%{
+        transform: translateY(55%);
+        transition: 0s;
+
+    }
+    49.5%{
+        transform: translateY(90%);
+        /* transition: 1s all; */
+        /* transition-delay: 35s; */
+
+    }
+    66.5%{
+        transform: translateY(80%);
+        transition: 0s;
+
+    }
+    83.1%{
+        transform: translateY(90%);
+        transition: 0.5s;
+
+    }
+    100%{
+        transform: translateY(0%);
+         transition: 2s;
+
+     } }
+
+.typed{
+    height: 65px;
+}
+.typed::after{
+    width: 100%;;
+    height: 100%;
+    display: block;
+    content:' ';
+    position: absolute;
+    animation:typed_work 10s  infinite;
+
+}
+@keyframes typed_work {
+    0%{
+        content:"I'm";
+        }
+        1%{
+        content:"I'm a";
+        }
+        2%{
+        content:"I'm a p";
+        }
+        3%{
+         content:"I'm a pr";
+        }
+        4%{
+         content:"I'm a pro";
+        }
+        5%{
+            content:"I'm a prog";
+        }
+        6%{
+            content:"I'm a progr";
+        }
+        7%{
+            content:"I'm a progra";
+        }
+        8%{
+        content:"I'm a program";
+        }
+        9%{
+        content:"I'm a programm";
+        }
+        10%{
+            content:"I'm a programme'";
+        }
+        11%{
+            content:"I'm a programmer";
+        }
+        12%{
+        content:"I'm a programmer.";
+        }
+        13%{
+            content:"I'm a programmer.|";
+        }
+        14%{
+            content:"I'm a programmer.";
+        }
+        15%{
+            content:"I'm a programmer.|";
+        }
+        16%{
+        content:"I'm a programmer.";
+        }
+        17%{
+            content:"I'm a programmer.|";
+        }
+        18%{
+            content:"I'm a programmer.";
+        }
+        19%{
+            content:"I'm a programmer.|";
+        }
+        20%{
+            content:"I'm a programmer.";
+        }
+        21%{
+            content:"I'm a programmer.|";
+        }
+        21%{
+            content:"I'm a programmer.";
+        }
+        22%{
+            content:"I'm a programme";
+        }
+        23%{
+        content:"I'm a programm";
+        }
+        24%{
+        content:"I'm a program";
+        }
+        25%{
+        content:"I'm a progra";
+        }
+        26%{
+        content:"I'm a progr";
+        }
+        27%{
+        content:"I'm a prog";
+        }
+        28%{
+        content:"I'm a pro";
+        }
+        29%{
+        content:"I'm a p";
+        }
+        30%{
+        content:"I'm a ";
+        }
+        31%{
+        content:"I'm a f";
+        }
+        32%{
+        content:"I'm a fr";
+        }
+        33%{
+        content:"I'm a fro";
+        }
+        34%{
+            content:"I'm a fron";
+            }
+        35%{
+        content:"I'm a front";
+        }
+        36%{
+        content:"I'm a front e";
+        }
+        37%{
+            content:"I'm a front en";
+        }
+        38%{
+        content:"I'm a front end";
+        }
+        39%{
+        content:"I'm a front end d";
+        }
+        40%{
+        content:"I'm a front end de";
+        }
+        41%{
+        content:"I'm a front end dev";
+        }
+        42%{
+        content:"I'm a front end deve";
+        }
+        43%{
+        content:"I'm a front end devel";
+        }
+        44%{
+        content:"I'm a front end develo";
+        }
+        45%{
+        content:"I'm a front end develop";
+        }
+        46%{
+        content:"I'm a front end develope";
+        }
+        47%{
+        content:"I'm a front end developer";
+        }
+        48%{
+        content:"I'm a front end developer.";
+        }
+        49%{
+        content:"I'm a front end developer.|";
+        }
+        50%{
+        content:"I'm a front end developer.";
+        }
+        51%{
+        content:"I'm a front end developer.|";
+        }
+        52%{
+        content:"I'm a front end developer.";
+        }
+        53%{
+        content:"I'm a front end developer.|";
+        }
+        54%{
+        content:"I'm a front end developer.";
+        }
+        55%{
+        content:"I'm a front end developer.|";
+        }
+        56%{
+        content:"I'm a front end developer.";
+        }
+        57%{
+        content:"I'm a front end developer.|";
+        }
+        58%{
+        content:"I'm a front end developer.";
+        }
+        59%{
+        content:"I'm a front end developer";
+        }
+        60%{
+        content:"I'm a front end develope";
+        }
+        61%{
+        content:"I'm a front end develop";
+        }
+        62%{
+        content:"I'm a front end develo";
+        }
+        63%{
+        content:"I'm a front end devel";
+        }
+        64%{
+        content:"I'm a front end deve";
+        }
+        65%{
+        content:"I'm a front end dev";
+        }
+        66%{
+            content:"I'm a front end de";
+        }
+        67%{
+        content:"I'm a front end d";
+        }
+        68%{
+        content:"I'm a front end ";
+        }
+        69%{
+        content:"I'm a front en";
+        }
+        70%{
+        content:"I'm a front e";
+        }
+        71%{
+        content:"I'm a front ";
+        }
+        72%{
+        content:"I'm a fron";
+        }
+        73%{
+            content:"I'm a fro";
+        }
+        74%{
+        content:"I'm a fr";
+        }
+        75%{
+            content:"I'm a f";
+        }
+        76%{
+        content:"I'm a ";
+        }
+        77%{
+        content:"I'm ";
+        }
+        78%{
+        content:"I'm a ";
+        }
+        79%{
+        content:"I'm a w";
+        }
+        80%{
+        content:"I'm a we";
+        }
+        81%{
+        content:"I'm a web";
+        }
+        82%{
+        content:"I'm a web d";
+        }
+        83%{
+        content:"I'm a web de";
+        }
+        84%{
+        content:"I'm a web dev";
+        }
+        85%{
+        content:"I'm a web deve";
+        }
+        86%{
+        content:"I'm a web devel";
+        }
+        87%{
+        content:"I'm a web develo";
+        }
+        88%{
+            content:"I'm a web develop";
+        }
+        89%{
+        content:"I'm a web develope";
+        }
+        90%{
+        content:"I'm a web develope";
+        }
+        91%{
+        content:"I'm a web developer";
+        }
+        92%{
+        content:"I'm a web developer.";
+        }
+        93%{
+            content:"I'm a web developer.|";
+        }
+        94%{
+        content:"I'm a web developer.";
+        }
+        95%{
+            content:"I'm a web developer.|";
+        }
+        96%{
+            content:"I'm a web developer";
+        }
+        97%{
+            content:"I'm a web developer.|";
+        }
+        98%{
+            content:"I'm a web developer.|";
+        }
+        99%{
+            content:"I'm a web developer.";
+        }
+        100%{
+            content:"I'm a web developer.|";
+        }
+        
+    
+}
+
+/* end header  */
+
+
+/* start about  */
+.about-content .list-inline-item a{
+    color:#000;
+}
+
+.about--icons i:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    border:2px solid #e65f78 !important;
+}
+
+/* end about  */
+
+
+/* ### start services #####  */
+.service-item{
+    cursor: pointer;
+}
+.service-item h3{
+    height: 60px;
+    /* background-color: red; */
+    margin:10px 0;
+}
+.service-item h3:after{
+    display: inline-block  ;
+    width: 10%;
+    margin: auto;
+    content: '';
+    position: absolute;
+    background-color: var(--primary-color);
+    height: 2px;
+    top:90%;
+    left:50%;
+    transform: translate(-50%,50%);
+    transition:all 0.5s;
+
+
+}
+.service-item:hover h3:after{
+    width: 15%;
+}
+/* ### end services #####  */
+
+
+/* ####start hiring ####### */
+.hire--me .container>.btn-custom{
+    padding: 15px 32px;
+
+}
+/* ####end hiring ####### */
+
+/* ####start client### */
+.carousel-indicators [data-bs-target]{
+box-sizing: content-box;
+flex: 0 1 auto;
+width: 20px;
+height: 20px;
+padding: 0;
+margin-right: 3px;
+margin-left: 3px;
+text-indent: -999px;
+cursor: pointer;
+background-clip: padding-box;
+background-color:var(--primary-color);
+border-radius: 50%;
+border: 0;
+border-top: 10px solid transparent;
+border-bottom: 10px solid transparent;
+opacity:0.5 ;
+}
+
+.carousel-indicators [data-bs-target].active{
+    background-color: red !important;
+    opacity: 1;
+    animation: carouselMove 1s;
+}
+@keyframes carouselMove {
+    0%{
+        width: 40px;
+        height: 40px;
+        
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    50%{
+        transform: translateY(0%);
+    
+
+    }
+    75%{
+        transform: translateY(-25%);
+        
+    }
+    100%{
+        transform: translateY(0%);
+
+    }
+    
+}
+/* ####end client### */
+
+
+ /* ###### start work ###### */
+.work .nav-link{
+    color:#000;
+    border-radius:35px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.work .nav-link:hover{
+    background-color: var(--hover-color);
+    color: #fff !important;
+}
+
+.work .nav-link.active{
+    background-color: var(--primary-color);
+    color: #fff !important;
+}
+/* .work--content{
+    height: 250px;;
+} */
+.work--content .overlay{
+    position:absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateY(100%);
+}
+.work--content p{
+    color:rgba(255, 255, 255, 0.6);
+}
+.work--content h4{
+    font-size: 18px;
+
+}
+.work--content {
+    cursor: pointer;
+    font-size: 14px;
+}
+.work--content img{
+    transition: 0.5s;
+}
+.work--content:hover img {
+    transform: scale(1.1, 1.1);
+}
+.work--content:hover .overlay{
+    transform: translateY(0);
+}
+/* ###end work####  */
+/* #### start blog####  */
+.blog .container h3{
+    font-size: 21px;
+    margin: 10px 0;
+}
+.blog .container a{
+    color:#000;
+}
+
+/* #### end blog####  */
+
+ /* start contact  */
+form input:focus{
+    border:2px solid var(--primary-color) !important;
+    box-shadow: none !important;
+    /* color: #212529; */
+    /* background-color: #fff; */
+    /* box-shadow: 0 0 0 .25rem !important; */
+}
+.contact textarea:focus{
+    border:2px solid var(--primary-color) !important;
+    box-shadow: none !important;
+
+}
+ /* end contact   */
+
+
+  /* ### start footer ### */
+footer li a i{
+  color:#ababab !important;
+  transition: all 0.5s;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(241, 241, 241, 0.08) !important;
+
+}
+footer ul li a:hover>i{
+    color:var(--primary-color) !important;
+}
+   /* ##### end footer ##### */

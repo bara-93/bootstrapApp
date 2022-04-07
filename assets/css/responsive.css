@@ -1,0 +1,16 @@
+@media (max-width:991px) {
+    .navbar{
+        background-color: #fff;
+    }
+    .navbar .img-logo1{
+        display: none;
+    }
+    .navbar .img-logo2{
+display: block;
+    }
+    .nav-link{
+        color: #000 !important;
+    }
+    }
+    
+    
